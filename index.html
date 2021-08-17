@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>Document</title>
   </head>
   <body>
-    <head>
-      <div class="text1"><p1>MY CALCULATOR</p1></div>
-    </head>
-    <section class="value">
-      <div class="first"><h1>?</h1></div>
-    </section>
-
-    <section class="variables">
-      <div class="varA">
-        <div class="value1">
-          Input the First Value<br />
-          <input type="number" class="firstValue" />
+    <main>
+      <div id="nav">
+        <h2>Calculator</h2>
+        <div class="holder">
+          <p><span class="white"> THEME </span></p>
+          <div class="themes">
+            <div class="one column">
+              <p class="text-white">1</p>
+              <div class="bg">
+                <button class="click" id="one">1</button>
+              </div>
+            </div>
+            <div class="two column">
+              <p class="text-white">2</p>
+              <div class="bg column">
+                <button class="click" id="two">2</button>
+              </div>
+            </div>
+            <div class="three column">
+              <p class="text-white">3</p>
+              <div class="bg">
+                <button class="click" id="3">3</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="varB">
-        <div class="value2">
-          Input the Second Value<br />
-          <input type="number" class="secondValue" />
-        </div>
+      <div id="screen">
+        <h3 class="output"></h3>
       </div>
-    </section>
-
-    <section class="third">
-      <button class="add calculate">ADD</button>
-      <button class="sub calculate">SUBTRACT</button>
-      <button class="mul calculate">MULTIPLY</button>
-      <button class="div calculate">DIVIDE</button>
-    </section>
-    <script src="script.js"></script>
+      <div id="body">
+        <button class="key key-7">7</button>
+        <button class="key key-8">8</button>
+        <button class="key key-9">9</button>
+        <button class="key reset-key">DEL</button>
+        <button class="key key-4">4</button>
+        <button class="key key-5">5</button>
+        <button class="key key-6">6</button>
+        <button class="key">+</button>
+        <button class="key key-1">1</button>
+        <button class="key key-2">2</button>
+        <button class="key key-3">3</button>
+        <button class="key">-</button>
+        <button class="key key-dot">.</button>
+        <button class="key key-0">0</button>
+        <button class="key">/</button>
+        <button class="key">*</button>
+        <button class="reset-key key-large">RESET</button>
+        <button class="equal-key key-large">=</button>
+      </div>
+    </main>
+    <script src="/script.js"></script>
   </body>
 </html>
