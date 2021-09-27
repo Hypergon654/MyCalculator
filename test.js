@@ -18,6 +18,8 @@ const display = document.getElementById("display");
 
 // Get the context of a Button
 
+// Once Press append the value into an array  DONE
+
 const clickEvent = function (btn) {
   btn.addEventListener("click", function () {
     console.log(btn.textContent);
@@ -26,12 +28,16 @@ const clickEvent = function (btn) {
     display.textContent = Number(arr.join(""));
   });
 };
+
+// Second phase second array
+// First array will be move to upper part
+// new clickevents will be stored into the second array
+// same function with the first it will log into the display and join all the lements
+// once = is press it will compute the upper array and the curretn array
+// display the result
+
 console.log(arr);
-// Once Press append the value into an array  DONE
 
-// after pressing the operator the first array will combine all the elements
-
-// log the next value into the next array
 clickEvent(btn1);
 clickEvent(btn2);
 clickEvent(btn3);
